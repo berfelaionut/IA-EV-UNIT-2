@@ -1,0 +1,158 @@
+body, html {
+	margin: 80px 50px 80px 50px;
+	text-align: right; /*aliniere text dreapta*/
+	font-family: Arial, Helvetica, sans-serif; /*text arial*/
+}
+#header {
+	margin: 0px 5px 0px 5px;
+	padding: 0px 10px 10px 10px;
+}
+.header {
+	margin-block-end: 0px;
+	padding-right: 15px;
+	border: 10px solid black; /*contur 10 pixeli negru*/
+	background: #949494; /*culoare:gri*/
+	color: #B2B2B2; /*culoare:gri*/
+	font-size: 50px;
+}
+p {
+	margin: 5px 30px 0px 0px;
+	color: #A5A5A5;
+	font-family: "Times New Roman", Times, serif; /*Times New Roman*/
+	font-weight: bold; /*text ingrosat*/
+	font-size: 35px; /*marime text*/
+	text-decoration: underline; /*text subliniat*/
+	font-style: italic; /*text inclinat*/
+}
+p.mail {
+	color: #5F5F5F; /*culoare: gri intunecat*/
+	font-size:20px; /*marime text 20 pixeli*/
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; /*font: Lucida*/
+	font-weight: normal; 
+	font-style: normal; /*anulare stil anterior*/
+}
+.center {
+	text-align: center; /*centrare text*/
+}
+ul {
+	font-size: 25px; /*textu din lista*/
+	list-style: inside; /*punctuletele de la lista*/
+}
+#tabel {
+	margin-top:100px;
+	display: table;
+}
+table {
+	float: right; /*aliniere dreapta*/
+	margin: 30px 30px 0px 0px; /*margine sus si dreapta de 30 px*/
+	width: 50%; /*latimea tabelului 50% din marimea paginii*/
+	border-collapse: separate;
+	border-spacing: 1px 1px;
+	table-layout: fixed; 
+	border:3px solid #808080; /*culoare tabel gri*/
+}
+th, td {
+	border: 3px solid #808080; /*culoare tabel gri*/
+	text-align: center; /*textul din coloane afisat in mijloc*/
+	height: 24px;
+	font-size: 20px;
+	color: black; /*culoare: neagru*/
+	padding: 2px 5px 2px 5px;
+}
+#main {
+	margin: 20px 0px 0px 0px;
+	background-color: #DFDFDF; /*culoare: gri deschis*/
+	border: 3px solid #B2B2B2; /*culoare: gri*/
+}
+.Retea {
+	padding: 50px 30px 0px 0px;
+}
+#Slideshow {
+	top: 15px;
+	bottom: 50px;
+	right: 10px;
+}
+#SlideshowPoze {
+	position: relative;
+	background-color: #5C7789; /*culoare: albastru-gri*/
+	margin: 0px 30px 0px 30px;
+	max-height: 500px;
+	max-width: 5000px;
+	height:auto;
+	width:auto;
+	overflow: auto;
+}
+#SlideshowPoze img {
+	float:left; /*afisarea incepe din stanga*/
+	max-height:30%;
+	max-width:30%;
+	margin: 15px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	display: inline; /*afisare in linie a pozelor*/
+	overflow: auto;
+}
+#SlideshowPoze span {/*aliniere butoane jos*/
+	bottom: -10px;
+	transform: translate(-50%, -50%);
+	margin: 15px auto;
+	
+}
+.cercPlin { /*butoane slideshow*/
+	height: 14px;
+	width: 14px;
+	background-color: #F6F4F1; /*culoare alba-putin gri*/
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	opacity: 1;
+}
+.cercGol {/*butoane slideshow*/
+	height: 10px;
+	width: 10px;
+	border: solid 2px #F6F4F1;/*culoare alba*/
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	opacity: 1;
+}
+.buttonRight {/*butoane slideshow dreapta*/
+	float: right;
+	margin-top: 170px;
+	font-size: 35px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+    cursor:pointer;
+    overflow: hidden;
+	color: #DAECF4;/*alb-albastrui*/
+}
+.buttonRight:hover {
+	color: #F42712;/*rosu*/
+}
+.buttonLeft {/*butoane slideshow stanga*/
+	float: left;
+	margin-top: 170px;
+	font-size: 35px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+    cursor:pointer;
+    overflow: hidden;
+	color: #DAECF4;/*alb-albastrui*/
+}
+.buttonLeft:hover {
+	color: #F42712;/*rosu*/
+}
+.images {
+	opacity:1;/*opacitatea pozelor*/
+}
+.fade {-webkit-animation-name: fade;
+	   -webkit-animation-duration: 1.5s;
+	   animation-name: fade;
+       animation-duration: 1.5s;
+}
+@-webkit-keyframes fade { from {opacity: .4} 
+to {opacity: 1} }
+@keyframes fade {from {opacity: .4} 
+  to {opacity: 1} }
